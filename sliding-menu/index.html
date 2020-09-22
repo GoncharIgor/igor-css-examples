@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<ul>
+    <li id="marker"></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+<script>
+    const marker = document.getElementById('marker');
+    const items = document.querySelectorAll('ul li a');
+
+    function indicator(element) {
+        marker.style.top = element.offsetTop + 'px';
+        marker.style.width = element.offsetWidth + 'px';
+    }
+
+    items.forEach(link => {
+        link.addEventListener('mousemove', (event) => {
+            indicator(event.target);
+        })
+    })
+</script>
+</body>
+</html>

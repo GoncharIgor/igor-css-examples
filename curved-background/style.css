@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    min-height: 150vh;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
+    The clip-path CSS property creates a clipping region that sets what part of an element should be shown.
+    Parts that are inside the region are shown, while those outside are hidden
+    clip-path: circle(200px at center center);
+    https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+    */
+    clip-path: circle(180vh at 50% -80vh);
+}
+
+section .content {
+    max-width: 1000px;
+    text-align: center;
+}
+
+section .content h2 {
+    font-size: 5em;
+    color: white;
+}
