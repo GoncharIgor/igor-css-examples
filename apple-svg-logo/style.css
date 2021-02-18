@@ -1,0 +1,46 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: #DEE0EF;
+}
+
+.container {
+    border-radius: 3em;
+    background: #f1f6fc;
+    box-shadow: 20px 20px 60px rgba(120, 113, 153, 0.486),
+    15px 15px 20px rgba(120, 113, 153, 0.582),
+    3px 3px 5px rgba(120, 113, 153, 1);
+    background: -moz-linear-gradient(-45deg, #f1f5fe 1%, #c5c6e7 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #f1f5fe 1%, #c5c6e7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f1f5fe 1%, #c5c6e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f5fe', endColorstr='#c5c6e7', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+path.top-apple-part-one, path.center-apple-part-one  {
+    fill: url(#mySvgGradientTwo);
+}
+
+path.top-apple-part-two, path.center-apple-part-two  {
+    fill: url(#mySvgGradientOne);
+    transform: scale(.97);
+    transform-origin: center;
+}
+
+path.logo-one  {
+    fill: url(#mySvgGradientTwo);
+}
+
+path.logo-two  {
+    fill: url(#mySvgGradientOne);
+    transform: scale(.97);
+    transform-origin: center;
+}
+
+
+svg {
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+}
