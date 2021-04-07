@@ -1,0 +1,395 @@
+*{ margin: 0;padding: 0; }
+
+body {
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    text-align: center;
+    color: #4373b1;
+    font-size: 105px;
+    letter-spacing: 5px;
+}
+
+.logo-wrapper {
+    background-color: #4373b1;
+    width: 400px;
+    height: 400px;
+    margin-left: calc((100vw - 400px)/2);
+    margin-top: calc((100vh - 400px)/2);
+    border-radius: 15%;
+    position: relative;
+}
+
+.cristo .corpo {
+    height: 250px;
+    width: 34px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cristo .corpo::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 250px solid #fff;
+    border-left: 25px solid transparent;
+    right: 100%;
+    bottom: 0;
+}
+.cristo .corpo::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 250px solid #fff;
+    border-right: 25px solid transparent;
+    left: 100%;
+    bottom: 0;
+}
+
+.cristo .braco-esquerdo {
+    width: 70px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 100%;
+}
+.braco-esquerdo .pano1 {
+    width: 35px;
+    height: 33px;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    right: calc(100% - 10px);
+    border-bottom-left-radius: 65% 100%;
+}
+.braco-esquerdo .pano2 {
+    border-top: 3px solid white;
+    border-right: 60px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 10px;
+}
+.cristo .braco-esquerdo::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 10px solid #fff;
+    border-left: 60px solid transparent;
+    right: 0;
+    bottom: 100%;
+}
+.cristo .braco-esquerdo::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 30px solid #fff;
+    border-left: 40px solid transparent;
+    right: 0;
+    top: 100%;
+}
+.cristo .braco-esquerdo .punho {
+    position: absolute;
+    background-color: #fff;
+    width: 30px;
+    height: 10px;
+    right: 100%;
+    top: 3px;
+}
+.cristo .braco-esquerdo .palma {
+    position: absolute;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    right: 100%;
+    top: -4px;
+    border-top-right-radius: 15px 4px;
+    border-bottom-right-radius: 15px 2px;
+}
+.cristo .braco-esquerdo .dedao {
+    position: absolute;
+    background-color: #fff;
+    width: 10px;
+    height: 3px;
+    right: 100%;
+    top: 0px;
+    border-bottom-left-radius: 5px 5px;
+}
+.cristo .braco-esquerdo .dedo-indicador {
+    position: absolute;
+    background-color: #fff;
+    width: 18px;
+    height: 3px;
+    right: 100%;
+    top: 3px;
+    border-top-left-radius: 5px 5px;
+}
+.cristo .braco-esquerdo .dedo-meio {
+    position: absolute;
+    background-color: #fff;
+    width: 20px;
+    height: 3px;
+    right: 100%;
+    top: 6px;
+    border-bottom-left-radius: 14px 5px;
+    border-top-left-radius: 12px 5px;
+}
+.cristo .braco-esquerdo .dedo-anelar {
+    position: absolute;
+    background-color: #fff;
+    width: 17px;
+    height: 3px;
+    right: 100%;
+    top: 9px;
+    border-bottom-left-radius: 6px 5px;
+}
+.cristo .braco-esquerdo .dedo-mindinho {
+    position: absolute;
+    background-color: #fff;
+    width: 13px;
+    height: 2px;
+    right: 100%;
+    top: 12px;
+    border-bottom-left-radius: 100% 5px;
+}
+.cristo .braco-esquerdo .dedo-mindinho::before {
+    content: '';
+    position: absolute;
+    border-top: 2px solid #fff;
+    border-left: 10px solid transparent;
+    right: 0;
+    top: 100%;
+}
+
+.cristo .braco-direito  {
+    width: 70px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 100%;
+}
+.braco-direito .pano1 {
+    width: 35px;
+    height: 33px;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: calc(100% - 10px);
+    border-bottom-right-radius: 65% 100%;
+}
+.braco-direito .pano2 {
+    border-top: 3px solid white;
+    border-left: 60px solid transparent;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+}
+.cristo .braco-direito::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 10px solid #fff;
+    border-right: 60px solid transparent;
+    left: 0;
+    bottom: 100%;
+}
+.cristo .braco-direito::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 30px solid #fff;
+    border-right: 40px solid transparent;
+    left: 0;
+    top: 100%;
+}
+.cristo .braco-direito .punho {
+    position: absolute;
+    background-color: #fff;
+    width: 30px;
+    height: 10px;
+    left: 100%;
+    top: 3px;
+}
+.cristo .braco-direito .palma {
+    position: absolute;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    left: 100%;
+    top: -4px;
+    border-top-left-radius: 15px 4px;
+    border-bottom-left-radius: 15px 2px;
+}
+.cristo .braco-direito .dedao {
+    position: absolute;
+    background-color: #fff;
+    width: 10px;
+    height: 3px;
+    left: 100%;
+    top: 0px;
+    border-bottom-right-radius: 5px 5px;
+}
+.cristo .braco-direito .dedo-indicador {
+    position: absolute;
+    background-color: #fff;
+    width: 18px;
+    height: 3px;
+    left: 100%;
+    top: 3px;
+    border-top-right-radius: 5px 5px;
+}
+.cristo .braco-direito .dedo-meio {
+    position: absolute;
+    background-color: #fff;
+    width: 20px;
+    height: 3px;
+    left: 100%;
+    top: 6px;
+    border-bottom-right-radius: 14px 5px;
+    border-top-right-radius: 12px 5px;
+}
+.cristo .braco-direito .dedo-anelar {
+    position: absolute;
+    background-color: #fff;
+    width: 17px;
+    height: 3px;
+    left: 100%;
+    top: 9px;
+    border-bottom-right-radius: 6px 5px;
+}
+.cristo .braco-direito .dedo-mindinho {
+    position: absolute;
+    background-color: #fff;
+    width: 13px;
+    height: 2px;
+    left: 100%;
+    top: 12px;
+    border-bottom-right-radius: 100% 5px;
+}
+.cristo .braco-direito .dedo-mindinho::before {
+    content: '';
+    position: absolute;
+    border-top: 2px solid #fff;
+    border-right: 10px solid transparent;
+    left: 0;
+    top: 100%;
+}
+
+.cristo .cabeca {
+    width: 30px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transform: translateX(-50%);
+}
+
+.cristo .cabeca::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 35px solid #fff;
+    border-left: 2px solid transparent;
+    right: 100%;
+    bottom: 0;
+}
+
+.cristo .cabeca::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 35px solid #fff;
+    border-right: 2px solid transparent;
+    left: 100%;
+    bottom: 0;
+}
+
+.batina {
+    height: 250px;
+    width: 34px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.batina .pano1 {
+    height: 150px;
+    width: 7px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 100%;
+    transform-origin: top right;
+    transform: rotate(5deg);
+    border-bottom-left-radius: 100% 10%;
+}
+.batina .pano2 {
+    height: 110px;
+    width: 7px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 100%;
+    transform-origin: top right;
+    transform: rotate(7deg);
+    border-bottom-left-radius: 100% 4px;
+}
+.batina .pano3 {
+    height: 102px;
+    width: 9px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: calc(100% + 6px);
+    transform-origin: top right;
+    transform: rotate(5deg);
+    border-bottom-left-radius: 100% 4px;
+}
+.batina .pano4 {
+    height: 190px;
+    width: 18px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 100%;
+    transform-origin: top left;
+    transform: rotate(-2deg);
+    border-bottom-right-radius: 10px 2px;
+}
+.batina .pano5 {
+    height: 150px;
+    width: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    left: calc(100% + 6px);
+    transform-origin: top left;
+    transform: rotate(-4deg);
+    border-bottom-right-radius: 100% 4%;
+}
+
+.braco-esquerdo  {
+    transform-origin: center right;
+    animation: tchau 0.6s ease infinite;
+}
+
+@keyframes tchau {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+

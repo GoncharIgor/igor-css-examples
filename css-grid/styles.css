@@ -1,0 +1,42 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    justify-items: stretch; /* will put element to start of the column. Default is stretch */
+    align-items: stretch; /* Default is stretch */
+    /*Aligns and justifies all items in the grin.
+    Below per each class .box1, it positions each item in column and row individually*/
+}
+
+.wrapper > div {
+    background-color: lightgrey;
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.box1 {
+    /*align-self: start;*/
+    grid-column: 1/3; /* Column takes bigger place, based on outer grid table lines. Means: start from column 1 and stretch to column 3 */
+    grid-row: 1/3;
+}
+
+.box2 {
+   /* align-self: end;*/
+}
+
+.box3 {
+    /*justify-self: end;*/
+    /*Grid boxes can overlay each other*/
+    grid-column: 1;
+    grid-row: 2/4;
+    border: 1px solid black;
+}
+
+.box4 {
+   /* justify-self: end;*/
+
+}
