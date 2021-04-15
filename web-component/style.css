@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
+    grid-auto-flow: row dense;
+}
+
+/*If we use shadow DOM, then these styles need to be declared inside component, but without its parent tag*/
+news-article h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+news-article a,
+news-article a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+news-article img {
+    width: 100%;
+}
