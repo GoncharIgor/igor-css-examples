@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3b5065;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    height: 420px;
+    background: white;
+    box-shadow: 0 0 20px rgba(98, 114, 131, 0.5);
+}
+
+.ribbon {
+    position: relative;
+}
+
+/* ------- RIBBON 1 ------ */
+
+.ribbon-1 {
+    width: 370px;
+    height: 50px;
+    background-color: #f86780;
+    top: 45px;
+    left: -10px;
+}
+
+.ribbon-1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-top: 5px solid #b00926;
+    border-right: 5px solid #b00926;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.ribbon-1::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    border-top: 5px solid #b00926;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #b00926;
+}
+
+.ribbon-1 .sub-ribbon-1,
+.ribbon-1 .sub-ribbon-2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #f52a4d;
+    top: 10px;
+    z-index: -1;
+}
+
+.ribbon-1 .sub-ribbon-1 {
+    left: -40px
+}
+
+.ribbon-1 .sub-ribbon-2 {
+    right: -40px
+}
+
+.ribbon-1 .sub-ribbon-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; /*we override the original .ribbon-1 .sub-ribbon-1. If we put here "left: -25px", then it will be long ribbon*/
+    border-top: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #3b5065;
+}
+
+.ribbon-1 .sub-ribbon-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; /*we override the original .ribbon-1 .sub-ribbon-1. If we put here "left: -25px", then it will be long ribbon*/
+    border-top: 25px solid transparent;
+    border-right: 25px solid #3b5065;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid transparent;
+}
+
+
+/* ------- RIBBON 2 ------ */
+
+.ribbon-2 {
+    width: 370px;
+    height: 50px;
+    background-color: #fece3c;
+    top: 105px;
+    left: -10px;
+}
+
+.ribbon-2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-top: 5px solid #b98c01;
+    border-right: 5px solid #b98c01;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.ribbon-2::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    border-top: 5px solid #b98c01;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #b98c01;
+}
+
+/* ------- RIBBON 3 ------ */
+
+.ribbon-3 {
+    width: 350px;
+    height: 50px;
+    background-color: #5a3184;
+    top: 155px;
+    left: 0;
+}
+
+.ribbon-3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    border-top: 5px solid transparent;
+    border-right: 15px solid #1b0e27;
+    border-bottom: 5px solid #1b0e27;
+    border-left: 15px solid transparent;
+}
+
+.ribbon-3::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -10px;
+    border-top: 5px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 5px solid #1b0e27;
+    border-left: 15px solid #1b0e27;
+}
+
+
+/* ------- RIBBON 4 ------ */
+
+.ribbon-4 {
+    width: 350px;
+    height: 50px;
+    background-color: #ea0d14;
+    top: 190px;
+    left: 0;
+}
+
+.ribbon-4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-top: 5px solid #72060a;
+    border-right: 15px solid #72060a;
+    border-bottom: 5px solid transparent;
+    border-left: 15px solid transparent;
+}
+
+.ribbon-4::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    border-top: 5px solid #72060a;
+    border-right: 15px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 15px solid #72060a;
+}
