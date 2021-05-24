@@ -1,5 +1,6 @@
-// shadow DOM incapsulates all internal .css of component from other, global ones
+// shadow DOM encapsulates all internal .css of component from other, global ones
 // if we make web component with shadow DOM, then global .css import in index.html won't work
+// and we need to define <style> tag here, inside setter
 
 class NewsArticle extends HTMLElement {
 
@@ -10,6 +11,9 @@ class NewsArticle extends HTMLElement {
     }
 
     set article(article) {
+        // without shadow DOM, it would look like:
+        // this.innerHTML = `...`
+
         this.root.innerHTML = `
         <style>
             h2 {

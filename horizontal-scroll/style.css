@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*The vertical scroll will be perform horizontal scrolling*/
+
+
+/*we turn around the outer wrapper from horizontal to vertical*/
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left; /*sets the origin for an element's transformations.*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/*For Chrome and Safari*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    width: 400vw;
+    /*opposite to outer wrapper rotation*/
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.one {
+    background-color: #fda7a7;
+}
+
+.two {
+    background-color: #55c7ea;
+}
+
+.three {
+    background-color: #a2efa2;
+}
+
+.four {
+    background-color: #f5a85a;
+}
+
