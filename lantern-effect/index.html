@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lantern Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main>
+    <div class="lantern"></div>
+</main>
+
+</body>
+<script>
+    const lantern = document.querySelector('.lantern');
+    document.addEventListener('mousemove', (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+
+        // #000 - black
+        // making gradient from transparent color at center of circle to black color
+        lantern.style.background = `radial-gradient(circle at ${x}px ${y}px, transparent, #000 40%)`;
+    });
+</script>
+</html>
