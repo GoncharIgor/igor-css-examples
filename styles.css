@@ -33,3 +33,15 @@ card-tile .card-container {
     padding: 12px 0 0;
     color: black;
 }
+
+@media (max-width: 1200px) {
+    #articles-grid-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    #articles-grid-wrapper {
+        grid-template-columns: 1fr;
+    }
+}

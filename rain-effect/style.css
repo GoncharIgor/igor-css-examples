@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background: url('assets/forest.png');
+    background-size: cover;
+}
+
+.rain {
+    height: 100vh;
+    background: url('assets/water.png');
+    animation: rain 0.8s linear infinite; /* adding rain animation */
+}
+
+/* implementing rain animation */
+@keyframes rain {
+    0% {
+        background-position: -10% -10%;
+    }
+
+    100% {
+        background-position: 20% 100%;
+    }
+}

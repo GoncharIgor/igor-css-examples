@@ -9,6 +9,7 @@ const projects = [
     'lantern-effect',
     'neon-button',
     'parallax-scroll',
+    'rain-effect',
     'ribbon',
     'sliding-menu',
     'social-icons',
