@@ -13,7 +13,11 @@ main {
     grid-auto-flow: row dense;
 }
 
-/*If we use shadow DOM, then these styles need to be declared inside component, but without its parent tag (e.g. without "news-article", just "h2")*/
+/*
+If we use shadow DOM, then these styles need to be declared inside component,
+but without its parent tag (e.g. without "news-article", just "h2")
+Since news-article uses shadow Dow, then it means that below styles won't work and may be removed
+*/
 news-article h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: red;

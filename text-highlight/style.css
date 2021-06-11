@@ -9,7 +9,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: white;
+    background: url("assets/bg.jpeg");
+    background-size: cover;
     font-family: consolas, serif;
 }
 
