@@ -6,6 +6,7 @@ const projects = [
     'curved-background',
     'gradient-loader',
     'horizontal-scroll',
+    'image-comparison',
     'lantern-effect',
     'neon-button',
     'parallax-scroll',

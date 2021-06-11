@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #070c15;
+}
+
+.imgBox {
+    position: relative;
+    width: 442px;
+    height: 500px;
+}
+
+.imgBox textarea {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background: url('assets/captain.png');
+    resize: none;
+    border: none;
+    outline: none;
+    opacity: 0.4;
+    filter: grayscale(1); /*makes img black-&-white*/
+}
+
+.imgBox textarea:last-child {
+    opacity: 1;
+    filter: grayscale(0);
+    width: 150px;
+    border-right: 2px solid white;
+    resize: horizontal;
+}
