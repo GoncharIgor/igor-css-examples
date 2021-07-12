@@ -1,4 +1,6 @@
 class CardTile extends HTMLElement {
+    // Web-component Without shadow DOM
+
     formatName = (projectName) => {
         return projectName.split('-').join(' ')
     }

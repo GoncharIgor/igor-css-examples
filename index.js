@@ -9,6 +9,7 @@ const projects = [
     'image-comparison',
     'lantern-effect',
     'neon-button',
+    'parallax-mouse-move',
     'parallax-scroll',
     'rain-effect',
     'ribbon',

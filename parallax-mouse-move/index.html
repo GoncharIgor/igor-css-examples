@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mousemove Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section class="banner">
+    <div class="container">
+        <div id="scene">
+            <div class="layer"><img src="assets/sun.png"></div>
+            <div class="layer" data-depth-x="0.25"><img src="assets/mountains.png"></div>
+            <div class="layer" data-depth-y="0.15"><img src="assets/clouds_right.png"></div>
+            <div class="layer" data-depth-y="-0.15"><img src="assets/clouds_left.png"></div>
+            <div class="layer" data-depth-x="0.5"><img src="assets/grass_01.png"></div>
+            <div class="layer" data-depth-x="-0.5"><img src="assets/grass_02.png"></div>
+            <div class="layer" data-depth-x="0.50"><img src="assets/sands.png"></div>
+            <div class="layer" data-depth="0.1"><img src="assets/wave_01.png"></div>
+            <div class="layer" data-depth="0.35"><img src="assets/boat_01.png"></div>
+            <div class="layer" data-depth="0.4"><img src="assets/wave_02.png"></div>
+            <div class="layer" data-depth-x="0.5"><img src="assets/boat_02.png"></div>
+            <div class="layer" data-depth="0.15"><img src="assets/wave_03.png"></div>
+            <div class="layer" data-depth="0.5"><img src="assets/wave_04.png"></div>
+            <div class="layer" data-depth-x="-0.5"><img src="assets/boat_03.png"></div>
+            <div class="layer" data-depth-x="0.25"><img src="assets/wave_05.png"></div>
+            <div class="layer" data-depth="-0.5"><img src="assets/birds.png"></div>
+            <div class="layer" data-depth="0.5"><img src="assets/text.png"></div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+    const scene = document.getElementById('scene');
+    const parallax = new Parallax(scene);
+</script>
+</body>
+</html>
