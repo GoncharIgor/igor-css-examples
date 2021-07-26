@@ -2,7 +2,8 @@ class CardTile extends HTMLElement {
     // Web-component Without shadow DOM
 
     formatName = (projectName) => {
-        return projectName.split('-').join(' ')
+        let result = projectName.split('-').join(' ');
+        return result.charAt(0).toUpperCase() + result.slice(1);
     }
 
     set cardTile(project) {

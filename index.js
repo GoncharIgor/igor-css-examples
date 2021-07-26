@@ -4,12 +4,14 @@ const projects = [
     'card',
     'clock',
     'curved-background',
+    'flying-balls',
     'gradient-loader',
     'horizontal-scroll',
     'image-comparison',
     'lantern-effect',
     'neon-button',
     'parallax-mouse-move',
+    'particles-mouse-move',
     'parallax-scroll',
     'rain-effect',
     'ribbon',
@@ -26,7 +28,7 @@ projects.forEach(project => {
 
 function createCardTile(projectName) {
     const cardTileElement = document.createElement('card-tile');
-    cardTileElement.cardTile = projectName;
+    cardTileElement.cardTile = projectName; // cardTile - setter inside card-tile.js
 
     articlesGridWrapper.appendChild(cardTileElement);
 }

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    left: -10%;
+    width: 120%;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(#e1f1e5, #acdabb);
+}
+
+.container .layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.container .layer img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.waves {
+    animation: wave-move 8s;
+    animation-iteration-count: infinite;
+}
+
+.waves-with-boat {
+    animation: wave-and-boat-move 12s linear infinite;
+}
+
+.waves-with-boat-left {
+    animation: wave-and-boat-move-left 12s linear infinite;
+}
+
+.waves-with-boat-center {
+    animation: wave-and-boat-move-center 16s linear infinite;
+}
+
+.clouds-right {
+    animation: clouds-move-right 30s linear infinite;
+}
+
+.birds {
+    animation: birds-move 60s linear infinite;
+}
+
+@keyframes birds-move {
+    0% {
+        left: -1600px;
+    }
+    20% {
+        left: -800px;
+        top: 150px;
+    }
+    35% {
+        left: -400px;
+        top: 0;
+    }
+    50% {
+        left: 0;
+        top: -30px;
+    }
+    65% {
+        left: 400px;
+        top: 100px;
+    }
+    80% {
+        left: 800px;
+        top: 200px;
+    }
+    100% {
+        left: 1600px;
+        top: 0;
+    }
+}
+
+@keyframes wave-move {
+    0% {
+        left: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+    50% {
+        left: 140px;
+    }
+    100% {
+        left: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+@keyframes wave-and-boat-move {
+    0% {
+        top: 0;
+        left: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+    50% {
+        top: -40px;
+        left: 80px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+@keyframes wave-and-boat-move-left {
+    0% {
+        top: 0;
+        left: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+    50% {
+        top: -30px;
+        left: -80px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+@keyframes wave-and-boat-move-center {
+    0% {
+        top: 0;
+        left: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+    50% {
+        top: 20px;
+        left: 120px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+@keyframes clouds-move-right {
+    0% {
+        left: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+    50% {
+        left: 120px;
+    }
+    100% {
+        left: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+}

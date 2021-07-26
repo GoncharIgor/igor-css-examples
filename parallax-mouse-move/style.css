@@ -1,33 +1,32 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
-.banner
-{
+
+.banner {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
-.container
-{
+
+.container {
     position: absolute;
     left: -10%;
     width: 120%;
     height: 100vh;
     background: radial-gradient(#e1f1e5, #acdabb);
 }
-.container #scene .layer
-{
+
+.container #scene .layer {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
 }
-.container .layer img
-{
+
+.container .layer img {
     position: absolute;
     bottom: 0;
     left: 0;
