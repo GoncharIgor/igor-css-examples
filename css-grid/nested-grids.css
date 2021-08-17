@@ -1,6 +1,6 @@
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /*4 columns of 33% each*/
+    grid-template-columns: 1fr 1fr 1fr; /*3 columns of 33% each*/
     /*
     is the same as above
     grid-template-columns: repeat(3, 1fr);

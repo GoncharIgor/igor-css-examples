@@ -1,3 +1,5 @@
+/*the whole list of items will be split per 2 columns*/
+
 .wrapper {
     display: grid;
     grid-template-columns: 70% 30%;

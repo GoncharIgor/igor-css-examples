@@ -17,6 +17,7 @@ const projects = [
     'ribbon',
     'sliding-menu',
     'social-icons',
+    'spinning-wheel',
     'text-highlight'
 ];
 
