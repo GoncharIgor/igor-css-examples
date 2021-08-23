@@ -4,6 +4,7 @@ const projects = [
     'card',
     'clock',
     'curved-background',
+    'curves',
     'flying-balls',
     'gradient-loader',
     'horizontal-scroll',

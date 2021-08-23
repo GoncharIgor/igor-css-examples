@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curves, Waves, and Blobs</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- Kute.js for SVG animation -->
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+</head>
+
+<body>
+    <section class="blue">
+        <h1>Curves with pure css</h1>
+        <p>The website, that is used below for SVG generation below in SVG section, are these ones</p>
+        <a href="https://www.shapedivider.app">
+            <p>https://www.shapedivider.app</p>
+        </a>
+        <a href="https://app.haikei.app">
+            <p>https://app.haikei.app</p>
+        </a>
+        <div class="curve"></div>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Fugit officiis vel autem, ea excepturi sint quos earum corrupti aperiam dolorum, magnam deserunt distinctio
+            laborum, labore fuga deleniti qui iure eligendi adipisci. Sed, consectetur deserunt dolor iure voluptate
+            exercitationem?</p>
+    </section>
+    <section class="bubble">
+        <h1>Buuble curve in middle</h1>
+        <p>Voluptates deleniti voluptatum dignissimos velit excepturi inventore consequuntur earum nihil ratione illum
+            itaque maxime, ex sunt amet. Impedit facilis eligendi, id sunt qui fuga esse provident laboriosam quasi
+            quibusdam minima?</p>
+    </section>
+    <section class="dark">
+        <h1>Nice Curves</h1>
+        <p>Unde eligendi necessitatibus labore minus porro eius officia rerum placeat alias laboriosam veniam aspernatur
+            doloremque vitae obcaecati consequuntur earum consequatur atque molestiae facere illo, voluptate error vel
+            cupiditate? Perspiciatis, id.</p>
+    </section>
+    <section class="red">
+        <h1>Curves with SVG generator</h1>
+        <p>This curves are made by SVG generator from the website:</p>
+        <a href="https://www.shapedivider.app">
+            <p>https://www.shapedivider.app</p>
+        </a>
+        <p>It can create only 1 wave at a single time</p>
+        <div class="wave-svg">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Transition spacer -->
+    <div class="spacer layer1"></div>
+
+    <section>
+        <h1>SVG Curves above</h1>
+        <p>This curves above and below are made by SVG generator from the website:</p>
+        <a href="https://app.haikei.app">
+            <p>https://app.haikei.app</p>
+        </a>
+        <p>It can randomly create multiple waves at single time</p>
+    </section>
+
+    <div class="spacer layer2 flip"></div>
+
+    <section class="pink">
+        <h1>Nice Curves</h1>
+        <p>Asperiores eaque soluta quae officiis fuga. Tempore tenetur atque placeat maiores sed corrupti natus
+            voluptatem, recusandae, ut obcaecati a, eligendi eum quidem cupiditate corporis quam! Veritatis voluptatibus
+            nisi officiis necessitatibus?</p>
+
+        <svg id="visual" viewBox="0 0 960 300" width="960" height="300" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(457.0231931900489 145.1271571291178)">
+                <path id="blob1"
+                    d="M95.2 -89.2C119.7 -70.7 133.4 -35.4 128.2 -5.2C123 25 99 50 74.5 73.1C50 96.3 25 117.7 -0.2 117.9C-25.5 118.1 -50.9 97.2 -63.4 74.1C-75.9 50.9 -75.5 25.5 -78.6 -3.2C-81.8 -31.8 -88.6 -63.6 -76.1 -82.1C-63.6 -100.6 -31.8 -105.8 1.8 -107.6C35.4 -109.4 70.7 -107.7 95.2 -89.2"
+                    fill="#BB004B"></path>
+            </g>
+            <g transform="translate(480.2696599075133 147.711196470977)"
+            style="visibility: hidden;">
+                <path id="blob2"
+                    d="M55.7 -55.7C73.2 -38.2 89.1 -19.1 88.6 -0.5C88.1 18.1 71.3 36.3 53.8 52.1C36.3 68 18.1 81.5 -8.6 90.1C-35.4 98.7 -70.7 102.4 -83.2 86.5C-95.7 70.7 -85.4 35.4 -80.4 4.9C-75.5 -25.5 -75.9 -50.9 -63.4 -68.4C-50.9 -85.9 -25.5 -95.5 -3.2 -92.3C19.1 -89.1 38.2 -73.2 55.7 -55.7"
+                    fill="#BB004B"></path>
+            </g>
+        </svg>
+
+        <script>
+            // SVG transforms
+            // Will take svg1 as a starting point and will transform it to the form of SVG 2
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: '#blob1' },
+                { path: '#blob2' },
+                { repeat: 999, duration: 3000, yoyo: true } // to go from 1-st to 2-ns and from 2-nd to 1-st
+            );
+
+            tween.start();
+        </script>
+    </section>
+
+    <div class="spacer layer2"></div>
+
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Quaerat eum tenetur consequatur. Sequi unde magnam fugit. Aliquam, totam dolore sunt facilis ratione
+            inventore atque ut ad vero nemo accusantium deserunt quae, sed mollitia? Quas, nesciunt mollitia?
+            Reiciendis, accusantium.</p>
+    </section>
+</body>
+
+</html>
