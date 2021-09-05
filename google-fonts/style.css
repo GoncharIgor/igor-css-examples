@@ -1,0 +1,37 @@
+/*
+Import rules:
+- spaces are replaced with "+"
+- separate fonts - with "|"
+- request other styles or weights, append a colon (:)
+e.g.: https://fonts.googleapis.com/css?family=Tangerine:italic,bolditalic|Inconsolata|Droid+Sans
+
+To use the effect, add the corresponding class name to your HTML element(s).
+The corresponding class name is always the effect name prefixed with font-effect-
+*/
+
+/* replace in import url, css version from "css2" to "css" */
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@500&display=swap&effect=shadow-multiple|fire-animation|neon|3d-float');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 6em;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+List of standard css text effects:
+https://freefrontend.com/css-text-effects/
+*/

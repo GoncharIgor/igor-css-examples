@@ -6,6 +6,7 @@ const projects = [
     'curved-background',
     'curves',
     'flying-balls',
+    'google-fonts',
     'gradient-loader',
     'horizontal-scroll',
     'image-comparison',
