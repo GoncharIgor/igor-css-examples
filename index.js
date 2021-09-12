@@ -1,6 +1,7 @@
 import './card-tile.js';
 
 const projects = [
+    'amazon-box',
     'card',
     'clock',
     'curved-background',
@@ -15,6 +16,7 @@ const projects = [
     'parallax-mouse-move',
     'particles-mouse-move',
     'parallax-scroll',
+    'pizza-flexbox',
     'rain-effect',
     'ribbon',
     'sliding-menu',

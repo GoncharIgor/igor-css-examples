@@ -15,6 +15,7 @@ body {
     padding: 10px;
 }
 
+/* since shadow dom is disabled in web-component, we need to target it by <card-tile> */
 card-tile a {
     text-decoration: none;
 }
