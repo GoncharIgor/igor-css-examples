@@ -7,6 +7,7 @@ const projects = [
     'curved-background',
     'curves',
     'flying-balls',
+    'game-character',
     'google-fonts',
     'gradient-loader',
     'horizontal-scroll',
