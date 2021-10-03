@@ -5,8 +5,10 @@
     grid-gap: 1em;
     justify-items: stretch; /* will put element to start of the column. Default is stretch */
     align-items: stretch; /* Default is stretch */
-    /*Aligns and justifies all items in the grin.
-    Below per each class .box1, it positions each item in column and row individually*/
+    /*
+    Aligns and justifies all items in the grid.
+    Below per each class .box1, it positions each item in column and row individually
+    */
 }
 
 .wrapper > div {

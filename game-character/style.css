@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
 /* image-rendering - sets an image scaling algorithm. default it - "crisp-edges" */
 
 :root {
@@ -9,7 +7,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -27,15 +25,15 @@ body {
     position: relative;
  }
 
- /* 
- steps - an animation option, the same as linear or ease-out 
+ /*
+ steps - an animation option, the same as linear or ease-out
  steps(4) - will perform not smooth animation, but in 4 frames
  */
  .character_spritesheet {
     position: absolute;
     width: calc(128px * var(--pixel-size)); /* 128px = 32px of each sprite * 4 sprites */
     animation: moveSpritesheet 1s steps(4) infinite;
-    
+
 }
 
  .character-shadow_sprite {

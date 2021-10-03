@@ -1,0 +1,108 @@
+:root {
+    --shadow-color: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #66ACFF 0%, #0391F8 100%);
+    font-size: 18px;
+}
+
+header {
+    background: #1D415C;
+    box-shadow: var(--shadow-color);
+    color: #fff;
+    padding: 0.8em 0;
+    margin-bottom: 2em;
+}
+
+.wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.card {
+    background: #fff;
+    box-shadow: var(--shadow-color);
+    border-radius: 4px;
+    position: relative;
+    padding: 1em 0;
+
+    display:grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover img {
+    transform:translateY(-10%);
+}
+
+.card img.large {
+    width: 65%;
+}
+
+.card-b {
+    /*
+    how much space in terms of columns this card has to take
+    starting from position 2 (col 2) and go to col 4
+    */
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+
+.card-c {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+
+@media (max-width: 600px) {
+    .card {
+        grid-column: span 2; /* each grid item has to gow wide and take 2 columns width */
+    }
+
+    .card-b {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+
+    .card-c {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+    }
+}
