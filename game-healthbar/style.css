@@ -1,0 +1,68 @@
+:root {
+    --bar-fill: #57e705;
+    --bar-top: #6aff03;
+    --pixel-size: 7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #de88ff;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: calc(48px * var(--pixel-size));
+    margin: 4em auto;
+}
+
+.title {
+    width: calc(9px * var(--pixel-size));
+    margin-bottom: calc(2px * var(--pixel-size));
+    display: block;
+}
+
+.healthbar {
+    width: 100%;
+    margin: 0 auto calc(2px * var(--pixel-size)) auto;
+    display: block;
+}
+
+.healthbar__fill {
+    fill: var(--bar-fill);
+    transition: width 0.1s linear, fill 0.2s linear;
+}
+
+.healthbar__fill--top {
+    fill: var(--bar-top);
+    transition: width 0.1s linear, fill 0.2s linear;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.button {
+    padding: 0;
+    border: 1px solid rgba(0,0,0,0);
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:focus {
+    border: 1px solid white;
+}
+
+.button img {
+    width: calc(9px * var(--pixel-size));
+    image-rendering: pixelated;
+}

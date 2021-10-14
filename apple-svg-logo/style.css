@@ -1,3 +1,9 @@
+/*
+Changing color of SVG icons:
+stroke: red; - for outlined
+fill:; red - for solid ones
+*/
+
 body {
     height: 100vh;
     margin: 0;

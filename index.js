@@ -8,6 +8,7 @@ const projects = [
     'curves',
     'flying-balls',
     'game-character',
+    'game-healthbar',
     'game-text-box',
     'game-inventory',
     'google-fonts',
