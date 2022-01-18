@@ -38,6 +38,7 @@ card-tile .card-container {
 
 card-tile .card img {
     height: 270px;
+    object-fit: cover;
 }
 
 @media (max-width: 1200px) {

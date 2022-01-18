@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --bg-color: #222327;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.user-wrapper {
+    display: flex;
+    gap: 6px;
+}
+
+.list .user {
+    position: relative;
+    background: white;
+    min-width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    /*space (gutters) between rows and columns. It is a shorthand for "row-gap" and "column-gap".
+       works with "flex" and "grid"*/
+}
+
+.list .user .imgBox {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.list .user .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list .user .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list .user .details h3 {
+    font-weight: 600;
+    line-height: 1.1em;
+}
+
+.list .user .details p {
+    font-weight: 500;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation {
+    position: relative;
+    width: 40px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s; /*can be used without all 0.5 ease-in*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation.active {
+    width: 200px;
+}
+
+.navigation span {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation span:nth-child(1) {
+    transform: translateY(-12px);
+}
+
+.navigation span:nth-child(3) {
+    transform: translateY(12px);
+}
+
+.navigation span i {
+    transition: 0.5s;
+    font-size: 0; /*to make icons invisible*/
+}
+
+/*for opened state*/
+.navigation.active span{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.navigation.active span:nth-child(1) {
+    transform: translateX(-60px);
+}
+
+.navigation.active span:nth-child(3) {
+    transform: translateX(60px);
+}
+
+.navigation.active span i {
+    color: white;
+    font-size: 1.25em; /*to make ACTIVE icons invisible*/
+}
+
+.navigation.active span:hover {
+    background: #29fd53;
+    border: 3px solid var(--bg-color);
+}
+
+.navigation.active span:hover i {
+    color: var(--bg-color);
+}

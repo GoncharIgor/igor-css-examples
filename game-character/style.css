@@ -34,7 +34,6 @@ steps(4) - will perform not smooth animation, but in 4 frames
     position: absolute;
     width: calc(128px * var(--pixel-size)); /* 128px = 32px of each sprite * 4 sprites */
     animation: moveSpritesheet 1s steps(4) infinite;
-
 }
 
 .character-shadow_sprite {
@@ -46,6 +45,10 @@ steps(4) - will perform not smooth animation, but in 4 frames
     image-rendering: pixelated; /* removes browser bluring and beautifiying of small images */
 }
 
+/*
+For drawing character inside simple div, we just move sprite-sheets
+For canvas, we could take only needed amount of pixels and draw them on canvas
+*/
 .move-down {
     top: calc(0px * var(--pixel-size));
 }

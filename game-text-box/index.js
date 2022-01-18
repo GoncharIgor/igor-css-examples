@@ -21,7 +21,7 @@ const characters = [];
 
 textLines.map((line, index) => {
     if (index < textLines.length - 1) {
-        // adding space to all lines at the end, rxcept the last line
+        // adding space to all lines at the end, except the last line
         line.text += ' ';
     }
 

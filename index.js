@@ -1,6 +1,7 @@
 import './card-tile.js';
 
 const projects = [
+    'action-buttons',
     'amazon-box',
     'card',
     'clock',
