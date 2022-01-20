@@ -12,6 +12,7 @@ const projects = [
     'game-healthbar',
     'game-text-box',
     'game-inventory',
+    'glass-card',
     'google-fonts',
     'gradient-loader',
     'horizontal-scroll',
