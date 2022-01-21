@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*flex-wrap задает правила вывода flex-элементов —  в одну строку или в несколько, с переносом блоков*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+p {
+    position: relative;
+    font-size: 1.5em;
+    letter-spacing: -0.05em;
+    line-height: 0.7em;
+    /* background: url(assets/face.png) fixed center; // shorthand for bg position and attachment */
+    background: url(assets/face.png), url(assets/face.png); /* you may have multiple bg images */
+    background-position: center;
+    background-attachment: fixed; /* background image will not scroll with the page */
+    background-size: cover; /* like "object-fit: cover" for other tags */
+    background-blend-mode: color-dodge;  /* sets how an element's background images should blend with each other and with the element's background color */
+    -webkit-background-clip: text; /* sets whether an element's background extends underneath its border box, padding box, or content box */
+    color: transparent;
+}

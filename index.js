@@ -28,7 +28,8 @@ const projects = [
     'sliding-menu',
     'social-icons',
     'spinning-wheel',
-    'text-highlight'
+    'text-highlight',
+    'text-portrait'
 ];
 
 const articlesGridWrapper = document.getElementById('articles-grid-wrapper');
