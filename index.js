@@ -25,6 +25,7 @@ const projects = [
     'pizza-flexbox',
     'rain-effect',
     'ribbon',
+    'sidebar',
     'sliding-menu',
     'social-icons',
     'spinning-wheel',

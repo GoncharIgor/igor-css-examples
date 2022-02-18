@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* --- Colors --- */
+    --body-color: #E4E9F7;
+    --sidebar-color: white;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* --- Transition --- */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+body {
+    height: 100vh;
+    background: var(--body-color);
+    transition: var(--tran-05);
+}
+
+body.dark {
+    /* --- Whole set of variables is rewritten --- */
+    --body-color: #18191A;
+    --sidebar-color: #242526;
+    --primary-color: #3A3B3C;
+    --primary-color-light: #3A3B3C;
+    --toggle-color: white;
+    --text-color: #CCC;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    z-index: 10;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+}
+
+.sidebar.closed {
+    width: 88px;
+}
+
+/* === reusable css === */
+.sidebar .text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--tran-03);
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.sidebar.closed .text {
+    opacity: 0;
+}
+
+.sidebar .image {
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .menu-bar {
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon {
+    min-width: 60px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar li .icon,
+.sidebar li .text {
+    color: var(--text-color);
+}
+
+.sidebar header {
+    position: relative;
+}
+
+.sidebar header .sidebar-header img {
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sidebar header .sidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar header .sidebar-header .header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar header .sidebar-header .header-text .name {
+    font-weight: 600;
+}
+
+.sidebar header .sidebar-header .header-text .profession {
+    margin-top: -2px;
+}
+
+.sidebar header .toggle {
+    position: absolute;
+    top: 25%;
+    right: -25px;
+    /*transform: translateY(-50%);*/
+    height: 25px;
+    width: 25px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 24px;
+    cursor: pointer;
+    transition: var(--tran-03);
+}
+
+body.dark .sidebar header .toggle {
+    color: var(--text-color);
+}
+
+.sidebar.closed header .toggle {
+    transform: rotate(180deg);
+}
+
+.sidebar .search-box {
+    border-radius: 6px;
+    background: var(--primary-color-light);
+    transition: var(--tran-05);
+}
+
+.sidebar .search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+    transition: var(--tran-05);
+}
+
+body.dark .sidebar .search-box input {
+    color: var(--text-color);
+}
+
+
+.sidebar li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+
+.sidebar li a:hover {
+    background: var(--primary-color);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
+    transition: var(--tran-02);
+}
+
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
+
+.sidebar .menu {
+    margin-top: 36px;
+}
+
+.sidebar .menu-bar .mode {
+    position: relative;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+}
+
+.sidebar .menu-bar .mode .moon-sun {
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .menu-bar .mode i {
+    position: absolute;
+    transition: var(--tran-02);
+}
+
+.sidebar .menu-bar .mode i.sun {
+    opacity: 0;
+}
+
+body.dark .sidebar .menu-bar .mode i.sun {
+    opacity: 1;
+}
+
+body.dark .sidebar .menu-bar .mode i.moon {
+    opacity: 0;
+}
+
+.sidebar .menu-bar .mode .toggle-switch {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+}
+
+.sidebar .menu-bar .mode .toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+}
+
+.sidebar .menu-bar .mode .toggle-switch .switch::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: var(--sidebar-color);
+    transition: var(--tran-03);
+}
+
+body.dark .sidebar .menu-bar .mode .toggle-switch .switch::before {
+    left: 24px;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    left: 250px;
+    width: calc(100% - 250px);
+    transition: var(--tran-05);
+    background: var(--body-color);
+}
+
+/*
+~ => General Sibling Selector - selects all next elements (not nested) that are siblings
++ => Adjacent Sibling Selector - selects 1-st sibling immediately following the element (".sidebar.closed" in below case)
+*/
+.sidebar.closed ~ .home {
+    left: 88px;
+    width: calc(100% - 88px);
+}
+
+.home .text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
+}
