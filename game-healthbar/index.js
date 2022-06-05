@@ -34,5 +34,5 @@ function renderHealthLiquidFills() {
     })
 }
 
-//init Rendering with default 50 HP
+// init 1-st Rendering with default 50 HP
 updateHP(-50)

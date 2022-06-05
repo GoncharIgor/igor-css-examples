@@ -3,6 +3,7 @@ import './card-tile.js';
 const projects = [
     'action-buttons',
     'amazon-box',
+    'book',
     'card',
     'clock',
     'curved-background',
@@ -17,6 +18,7 @@ const projects = [
     'gradient-loader',
     'horizontal-scroll',
     'image-comparison',
+    'isometric-menu',
     'lantern-effect',
     'neon-button',
     'parallax-mouse-move',
