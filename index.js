@@ -3,6 +3,7 @@ import './card-tile.js';
 const projects = [
     'action-buttons',
     'amazon-box',
+    'autocomplete',
     'book',
     'card',
     'clock',
