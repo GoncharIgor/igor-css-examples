@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section aria-label="Newest Photos">
+    <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button> <!-- special symbols are called html entities -->
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button> <!-- data-carousel-button - attribute for easy grab in js script -->
+
+        <ul data-slides>
+            <li class="slide" data-active>
+                <img src="https://source.unsplash.com/aJYO8JmVodY" alt="Work table">
+            </li>
+            <li class="slide">
+                <img src="https://source.unsplash.com/02Y82h1yD5E" alt="Rhinos">
+            </li>
+            <li class="slide">
+                <img src="https://source.unsplash.com/PdH2eRyIo24" alt="Mountain">
+            </li>
+        </ul>
+    </div>
+</section>
+
+<script src="index.js" defer></script> <!-- defer - loads after html -->
+</body>
+</html>
