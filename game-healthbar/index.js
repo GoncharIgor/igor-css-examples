@@ -17,6 +17,8 @@ function renderHealthLiquidFills() {
     const percentHP = currentHP / maxHP * 100;
 
     // Apply color values to css variables
+    // setProperty('--bar-fill', '#d6ed20'); - way to change css variables from JS
+    // document.documentElement - change styles globally in the whole .css file
     document.documentElement.style.setProperty('--bar-fill', '#57e705');
     document.documentElement.style.setProperty('--bar-top', '#6aff03');
 

@@ -5,6 +5,7 @@ const projects = [
     'amazon-box',
     'book',
     'card',
+    'carousel',
     'clock',
     'curved-background',
     'curves',
