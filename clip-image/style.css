@@ -1,0 +1,78 @@
+/*
+clip-path - cuts the images in pieces
+Tool for this: https://bennettfeely.com/clippy/
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    min-height: 100vh;
+    background: #222;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+.box span {
+    position: absolute;
+    inset: 0;  /* top, left, bottom and right = 0 */
+    transition: 0.5s;
+}
+
+.box:nth-child(1) span {
+    background: url("assets/forest.png") center;
+    background-size: cover;
+}
+
+.box:nth-child(2) span {
+    background: url("assets/bg.webp") center;
+    background-size: cover;
+}
+
+.box span:nth-child(1) {
+    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    transition-delay: 0s;
+}
+
+.box span:nth-child(2) {
+    clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+    transition-delay: 0.25s;
+}
+
+.box span:nth-child(3) {
+    clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    transition-delay: 0.5s;
+}
+
+.box span:nth-child(4) {
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+    transition-delay: 0.75s;
+}
+
+/* hoover effects */
+.box:hover span:nth-child(1) {
+    transform: translate(-40px, -60px) rotate(-15deg);
+}
+
+.box:hover span:nth-child(2) {
+    transform: translate(40px, -100px) rotate(15deg);
+}
+
+.box:hover span:nth-child(3) {
+    transform: translate(-40px, 80px) rotate(15deg);
+}
+
+.box:hover span:nth-child(4) {
+    transform: translate(40px, 80px) rotate(-15deg);
+}

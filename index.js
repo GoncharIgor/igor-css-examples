@@ -5,6 +5,7 @@ const projects = [
     'amazon-box',
     'autocomplete',
     'book',
+    'clip-image',
     'card',
     'carousel',
     'clock',
