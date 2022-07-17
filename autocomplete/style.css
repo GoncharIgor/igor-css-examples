@@ -1,0 +1,4 @@
+/* overriding bootstrap default theme color */
+body {
+    background: #1b3a46;
+}
