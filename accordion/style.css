@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f8ff;
+}
+
+.container {
+    margin: 0 40px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container h1 {
+    color: var(--text-color);
+}
+
+.container .tab {
+    position: relative;
+    background: white;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.container .tab input {
+    appearance: none; /* hides radio button */
+}
+
+.container .tab label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container .tab label::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+}
+
+.container .tab:hover label::after {
+    color: var(--text-color);
+}
+
+/* "~" - all next siblings of a specified element */
+/* +" - only the 1-st sibling of a specified element */
+.container .tab input:checked ~ label::after {
+    transform: rotate(135deg);
+    color: white;
+}
+
+/* number label */
+.container .tab label h2 {
+    width: 40px;
+    height: 40px;
+    background: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.container .tab input:checked ~ label h2 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 8rem;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.container .tab:nth-child(2) label h2 {
+    background: linear-gradient(135deg, #70f570, #49c628);
+}
+
+.container .tab:nth-child(3) label h2 {
+    background: linear-gradient(135deg, #3c8ce7, #00eaff);
+}
+
+.container .tab:nth-child(4) label h2 {
+    background: linear-gradient(135deg, #ff96f9, #c32bac);
+}
+
+.container .tab:nth-child(5) label h2 {
+    background: linear-gradient(135deg, #fd6e6a, #ffc600);
+}
+
+.container .tab label h3 {
+    position: relative;
+    font-weight: 500;
+    color: var(--text-color);;
+    z-index: 10;
+}
+
+.container .tab input:checked ~ label h3 {
+    background: white;
+    padding: 2px 20px;
+    color: var(--text-color);
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.container .tab .content {
+    max-height: 0;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.container .tab input:checked ~ .content {
+    max-height: 100vh;
+}
+
+.container .tab .content p {
+    position: relative;
+    padding: 10px 0;
+    color: var(--text-color);
+    z-index: 10;
+}
+
+.container .tab input:checked ~ .content p {
+    color: white;
+}
