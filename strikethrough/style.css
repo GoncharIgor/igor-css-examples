@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #038178;
+    font-family: cursive;
+}
+
+.lists-wrapper {
+    display: flex;
+    gap: 100px;
+}
+
+ul {
+    list-style: none;
+    color: #c6fcee;
+    font-size: 2rem;
+}
+
+li {
+    padding: 10px;
+    transition: 250ms linear;
+    position: relative;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+/* background image gradient approach */
+li.bg-image-gradient-approach {
+    background-image: linear-gradient(to bottom,
+    rgba(255, 0, 0, 0) 50%,
+    rgba(255, 0, 0, 1) 50%,
+    rgba(255, 0, 0, 1) 60%,
+    rgba(255, 0, 0, 0) 60%
+    );
+    background-size: 0 100%; /* "x" and "y" axises*/
+    background-repeat: no-repeat;
+}
+
+li.bg-image-gradient-approach:hover {
+    background-size: 100% 100%;
+}
+
+
+/* ::after pseudo-class approach */
+li.after-approach::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 10px;
+    background: red;
+    position: absolute;
+    bottom: 30px;
+    z-index: -1;
+}
+
+li.after-approach:hover::after {
+    width: 100%;
+    transition: 250ms linear;
+}
+
+
+/* custom-cross ::after and ::before approach */
+li.custom-cross::before,
+li.custom-cross::after {
+    content: '';
+    width: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-bottom: 4px solid red;
+}
+
+li.custom-cross::before {
+    transform: skewY(-10deg);
+}
+
+li.custom-cross::after {
+    transform: skewY(10deg);
+}
+
+li.custom-cross:hover::before,
+li.custom-cross:hover::after {
+    width: 100%;
+}
+
+
+/* For crossing all the items, except the hovered one */
+.others-closed:hover li {
+    background-image: linear-gradient(to bottom,
+    rgba(255, 0, 0, 0) 50%,
+    rgba(255, 0, 0, 1) 50%,
+    rgba(255, 0, 0, 1) 60%,
+    rgba(255, 0, 0, 0) 60%
+    );
+    background-size: 100% 100%; /* "x" and "y" axises */
+    background-repeat: no-repeat;
+}
+
+.others-closed li:hover {
+    color: white;
+    transform: scale(1.2);
+    background-size: 0 100%; /* remove strikethrough effect from hovered item */
+}

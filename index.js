@@ -35,6 +35,7 @@ const projects = [
     'sliding-menu',
     'social-icons',
     'spinning-wheel',
+    'strikethrough',
     'text-highlight',
     'text-portrait'
 ];
