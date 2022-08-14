@@ -1,0 +1,11 @@
+.chart-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chartContainer {
+    height: 300px;
+    width: 80%;
+}
