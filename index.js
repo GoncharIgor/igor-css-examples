@@ -37,7 +37,8 @@ const projects = [
     'spinning-wheel',
     'strikethrough',
     'text-highlight',
-    'text-portrait'
+    'text-portrait',
+    'water-drops'
 ];
 
 const articlesGridWrapper = document.getElementById('articles-grid-wrapper');
