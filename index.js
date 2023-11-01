@@ -9,6 +9,7 @@ const projects = [
     'clip-image',
     'card',
     'carousel',
+    'carousel-wave',
     'clock',
     'curved-background',
     'curves',
@@ -53,5 +54,3 @@ function createCardTile(projectName) {
 
     articlesGridWrapper.appendChild(cardTileElement);
 }
-
-// createCardTile('projectName');

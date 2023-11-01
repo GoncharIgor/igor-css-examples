@@ -7,7 +7,6 @@ class CardTile extends HTMLElement {
     }
 
     set cardTile(project) {
-
         this.innerHTML = `
         <a href="${project}/index.html">
             <div class="card">
