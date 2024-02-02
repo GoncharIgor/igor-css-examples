@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #091921;
+    font-family: Roboto, Inter, serif;
+    font-size: 24px;
+}
+
+.text-container {
+    width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+
+p {
+    margin-top: 10px;
+    color: white;
+}
+
+mark.scroll-highlight {
+    background-image: linear-gradient(purple, purple); /* not bg-color because now we can control background-size which will be animated */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: lightgreen;
+
+    animation: mark-it linear;
+    animation-fill-mode: forwards;
+    animation-timeline: view(); /* specifies the timeline that is used to control the progress of a CSS animation.
+    "view()" - progressed through based on the change in visibility of an element (known as the subject) inside a scroller*/
+    animation-iteration-count: 1;
+    animation-range: contain 0% contain 25%; /* to start the animation as soon as the element is fully within the viewport, then finish when it’s 25% of the way up the currently visible viewport. */
+}
+
+@keyframes mark-it {
+    0% {
+        background-size: 0 100%; /* Background image's width is set to 0 (essentially making it invisible or not taking up any space initially) and the height is set to 100% of the element's height. */
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+}

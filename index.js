@@ -32,6 +32,7 @@ const projects = [
     'pizza-flexbox',
     'rain-effect',
     'ribbon',
+    'scroll-highlight',
     'sidebar',
     'sliding-menu',
     'social-icons',
