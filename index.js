@@ -25,6 +25,7 @@ const projects = [
     'image-comparison',
     'isometric-menu',
     'lantern-effect',
+    'loading-hamster',
     'neon-button',
     'parallax-mouse-move',
     'particles-mouse-move',
